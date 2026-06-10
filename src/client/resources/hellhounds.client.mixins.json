@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "net.altias.client.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"WolfTextureMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

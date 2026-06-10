@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "hellhounds",
+	"version": "${version}",
+	"name": "Hellhounds",
+	"description": "Adds hellhound packs to the nether",
+	"authors": [
+		"Altias"
+	],
+	"contact": {
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/hellhounds/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.altias.Hellhounds"
+		],
+		"client": [
+			"net.altias.client.HellhoundsClient"
+		]
+	},
+	"mixins": [
+		"hellhounds.mixins.json",
+		{
+			"config": "hellhounds.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
